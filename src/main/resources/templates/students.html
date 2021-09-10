@@ -38,8 +38,9 @@
 
 		<div class="row">
 			<div class="col-lg-3">
-				<a th:href="@{/students/add}" class="btn btn-primary btn-sm mb-3">Add
-					Student</a>
+				<a 
+				th:href="@{/students/add}" class="btn btn-primary btn-sm mb-3"
+				>ADD STUDENT</a>
 			</div>
 		</div>
 
@@ -57,6 +58,12 @@
 					<td th:text="${student.firstName}"></td>
 					<td th:text="${student.lastName}"></td>
 					<td th:text="${student.email}"></td>
+					<td>
+						<a 
+						th:href="@{/students/edit/{id}(id=${student.id})}"
+						class="btn btn-primary"
+						>EDIT</a>
+					</td>
 				</tr>
 			</tbody>
 
