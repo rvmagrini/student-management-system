@@ -39,7 +39,8 @@
 		<div class="row">
 			<div class="col-lg-3">
 				<a 
-				th:href="@{/students/add}" class="btn btn-primary btn-sm mb-3"
+				th:href="@{/students/add}" 
+				class="btn btn-success btn-lg mb-3"
 				>ADD STUDENT</a>
 			</div>
 		</div>
@@ -62,8 +63,15 @@
 						<a 
 						th:href="@{/students/edit/{id}(id=${student.id})}"
 						class="btn btn-primary"
-						>EDIT</a>
+						style="width:49%"
+						>UPDATE</a>
+						<a 
+						th:href="@{/students/{id}(id=${student.id})}" 
+						class="btn btn-danger"
+						style="width:49%"
+						>DELETE</a>
 					</td>
+					
 				</tr>
 			</tbody>
 
